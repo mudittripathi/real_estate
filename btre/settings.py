@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
     'realtors.apps.RealtorsConfig',
+    'contacts.apps.ContactsConfig',
     'django.contrib.humanize',
     'accounts.apps.AccountsConfig'
 ]
@@ -140,3 +141,10 @@ from django.contrib.messages import constants as messages
 MESSAGE_TAGS = {
     messages.ERROR: 'danger'
 }
+
+# Email Config
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'hankshcra@gmail.com'
+EMAIL_HOST_PASSWORD = 'Agentshrader@123'
+EMAIL_USE_TLS = True
